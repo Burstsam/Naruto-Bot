@@ -186,13 +186,13 @@ def new_member(update: Update, context: CallbackContext):
                     reply_to_message_id=reply)
                 welcome_log = (f"{html.escape(chat.title)}\n"
                                f"#USER_JOINED\n"
-                               f"Bot Owner just joined the chat")
+                               f"Naruto Universe God just joined the chat")
                 continue
 
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Whoa! S Rank Hunter just joined!",
+                    "Whoa! A Sannin just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -200,7 +200,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_photo(
-                MIKU, caption= "Huh! A Rank Hunter just joined! Stay Alert!",
+                MIKU, caption= "Huh!  A Hokage just joined! Stay Alert!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -208,7 +208,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_photo(
-                MIKU, caption= "Huh! Someone with a B Rank Hunter level just joined!",
+                MIKU, caption= "Huh! Someone with a Jonin level just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -216,14 +216,14 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_photo(
-                MIKU, caption= "Oof! A C Rank Hunter just joined!",
+                MIKU, caption= "Oof! A chunin just joined!",
                     reply_to_message_id=reply)
                 continue
 
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_photo(
-                MIKU, caption= "Oof! A D Rank Hunter just joined!",
+                MIKU, caption= "Oof! A Genin Kid just joined!",
                     reply_to_message_id=reply)
                 continue
 
@@ -243,10 +243,10 @@ def new_member(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="Support🚑",
-                             url=f"https://t.me/MikusSupport"),
+                             url=f"https://t.me/Marin_Support"),
                        InlineKeyboardButton(
                              text="Updates🛰️",
-                             url="https://t.me/CrowdXStrike")
+                             url="https://t.me/marin_updates")
                      ] 
                 ]
             ),
